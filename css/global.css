@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    /* max-width: 1250px; */
+    font-family: 'DM Sans';
+    color: #000;
+}
+.container{
+    /* max-width: 1248px; */
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    display: block;
+    text-decoration: none;
+
+}
+
+    
+      
+    
+    

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
+</head>
+<body>
+    <header class="header">
+        <div class="container header_container">
+            <div class="section_left">
+                <input type="text" id="search_section" placeholder="Search...">
+                <a href="#" class="search_button" id="search_button">Search</a>
+                <a href="#" class="clear_button" id="clear_button">Clear</a>
+            </div>
+            <div class="section_right">
+                <a class="right_nav" href="#">My Salon</a>
+                <a class "right_nav" href="#">My Cars</a>
+                <a class="right_nav" href="#">Create Car</a>
+            </div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container create_container">
+            <div class="main_left">
+                <h2 class="main_left_h">Create Car</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" required placeholder="Text..." />
+                <label for="description">Description</label>
+                <textarea id="description" cols="25" rows="8"></textarea>
+                <label for="price">Price ($)</label>
+                <input type="text" id="price" required title="Please enter only numbers" />
+                <label for="type">Type</label>
+                <select id="type">
+                    <option value="" disabled selected>Select Car Type</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="Crossover">Crossover</option>
+                    <option value="Cabriolet">Cabriolet</option>
+                </select>
+                <button type="button" id="submit_button">Submit</button>
+            </div>
+        </div>
+        <div class="main_right">
+            <main id="list">
+                <h2 class="h_main_right">Cars</h2>
+                <div id="car_list"></div>
+            </main>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <!-- <span class="close">&times;</span> -->
+                <h2>Edit Car</h2>
+                <label for="edit-name">New Name</label>
+                <input type="text" id="edit-name" required placeholder="Enter new name..." />
+                <label for="edit-description">New Description</label>
+                <textarea id="edit-description" cols="25" rows="8"></textarea>
+                <label for="edit-price">New Price ($)</label>
+                <input type="text" id="edit-price" required placeholder="Enter new price..." />
+                <label for="edit-type">New Type</label>
+                <select id="edit-type">
+                    <option value="" disabled selected>Select Car Type</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="Crossover">Crossover</option>
+                    <option value="Cabriolet">Cabriolet</option>
+                </select>
+                <div class="modal-button">
+                    <button type="button" id="save_button">Save</button>
+                    <button type="button" id="cancel_button">Cancel</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
