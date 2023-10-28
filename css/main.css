@@ -1,0 +1,172 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_left {
+
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+
+}
+.main_left_h {
+font-family: DM Sans;
+font-size: 26px;
+font-weight: 500;
+line-height: 43px;
+text-align: left;
+
+}
+#name {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+}
+#description {
+  width: 200px;
+  height: 120px; 
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+}
+#price {
+  width: 200px;
+  height: 35px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+}
+#type {
+  width: 200px; 
+  height: 40px; 
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+}
+
+#submit_button  {
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff; 
+  font-size: 12x; 
+  margin-top: 30px;
+  box-shadow: none;
+  border: 0px;
+ 
+  
+}
+.button{
+  text-decoration: none;
+}
+#name, #description, #price, #type {
+  margin-top: 10px;
+}
+.create_container{
+  display: flex;
+  margin: 0;
+  padding-left: 95px;
+}
+.main_right{
+  width: 65%;
+}
+.car-item {
+  border: 1.5px solid #A18A68;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 40px;
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.car-item button {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.delete_button {
+  background-color: #a30a0a;
+}
+.edit_button {
+  background-color: #0061cf;
+  margin-right: 20%;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.219);
+  padding-left: 35%;
+  padding-top: 20px;
+}
+.modal-content {
+  background-color: #fefefe;
+  padding: 25px;
+  border: 1px solid #888;
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-content input[type="text"],
+.modal-content textarea,
+.modal-content select,
+.modal-content label {
+  width: 80%;
+  margin-left: 0px;
+  color: #1f1f1f;
+}
+.modal-content label {
+  width: 84%;
+}
+.modal-content select {
+  width: 84%;
+}
+.modal-content input[type="text"],
+.modal-content select {
+  height: 30px;
+  padding: 0px 8px;
+}
+.modal-content textarea {
+  padding: 8px 8px;
+}
+#edit-name,
+#edit-description,
+#edit-price,
+#edit-type {
+  margin-bottom: 15px;
+}
+.modal-button {
+  margin-top: 15px;
+  margin-bottom: 18px;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#save_button,
+#cancel_button {
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  color: white;
+  border-style: none;
+}
+#save_button {
+  background-color: #0061cf;
+}
+#cancel_button {
+  background-color: #960404;
+}
